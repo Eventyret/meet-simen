@@ -1,0 +1,11 @@
+{
+  "name": "meet-simen",
+  "version": "1.0.0",
+  "description": "Simple CLI To print my name",
+  "bin": {
+    "meetsimen": "index.js"
+  },
+  "dependencies": {
+    "cli-welcome": "^2.2.2"
+  }
+}
