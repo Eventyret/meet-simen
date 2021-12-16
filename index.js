@@ -21,4 +21,5 @@ Passionate about building state-of-the-art, easy to use, user-friendly websites 
 🌏 LinkedIn: https://www.linkedin.com/in/simendaehlin/
 📖 Github: https://github.com/Eventyret
 😎 Blog: https://blog.dehlin.dev
+🙋‍♂️ Website: https://dehlin.dev
 `);

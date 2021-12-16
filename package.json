@@ -1,7 +1,7 @@
 {
   "name": "meet-simen",
   "version": "1.0.0",
-  "description": "Simple CLI To print my name",
+  "description": "get to know Simen via `npx meetsimen`",
   "bin": {
     "meetsimen": "index.js"
   },
