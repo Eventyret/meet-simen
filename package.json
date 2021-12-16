@@ -1,7 +1,7 @@
 {
   "name": "meet-simen",
   "version": "1.1.0",
-  "description": "get to know Simen via `npx meetsimen`",
+  "description": "Get to know Simen via `npx meet-simen`",
   "bin": {
     "meet-simen": "index.js"
   },
