@@ -3,9 +3,16 @@
   "version": "1.1.0",
   "description": "get to know Simen via `npx meetsimen`",
   "bin": {
-    "meetsimen": "index.js"
+    "meet-simen": "index.js"
   },
   "dependencies": {
     "cli-welcome": "^2.2.2"
-  }
+  },
+  "keywords": [
+    "Simen",
+    "Daehlin",
+    "Simen Daehlin",
+    "SimenDaehlin",
+    "Who is Simen Daehlin"
+  ]
 }
