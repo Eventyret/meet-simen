@@ -6,6 +6,7 @@
     "meet-simen": "index.js"
   },
   "dependencies": {
+    "chalk": "^5.0.0",
     "cli-welcome": "^2.2.2"
   },
   "keywords": [
