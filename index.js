@@ -8,7 +8,7 @@ const linkedIn = chalk.hex('#0077b5').inverse.bold;
 const github = chalk.hex('#6cc644').bold.inverse;
 const titleClr = chalk.hex('#FADC00').bold.inverse;
 const italic = chalk.italic;
-const sym = require('log-symbols');
+const checkNode = require('cli-check-node');
 const dim = chalk.dim;
 welcome({
   title: pkgJson.name,
@@ -21,6 +21,7 @@ welcome({
   clear: true,
 });
 
+checkNode('12');
 console.log(`
 ${titleClr(` Simen Daehlin `)}
 
