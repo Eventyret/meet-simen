@@ -16,5 +16,5 @@ const flags = cli.flags;
   if (flags.ad) alert({ type: 'info', msg: data.ad });
 
   // debug info if needed
-  debug(flags.debug, input, flags);
+  debug(flags.debug, cli);
 })();
