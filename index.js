@@ -2,7 +2,13 @@
 const pkgJson = require('./package.json');
 const welcome = require('cli-welcome');
 const chalk = require('chalk');
-
+const website = chalk.hex('#da1884').inverse;
+const blog = chalk.hex('#6937FF').inverse;
+const linkedIn = chalk.hex('#0077b5').inverse.bold;
+const github = chalk.hex('#6cc644').bold.inverse;
+const titleClr = chalk.hex('#FADC00').bold.inverse;
+const italic = chalk.italic;
+const dim = chalk.dim;
 welcome({
   title: pkgJson.name,
   tagLine: `Howdy, nice to meet ya!`,
@@ -15,13 +21,13 @@ welcome({
 });
 
 console.log(`
-${chalk.hex('#FADC00').bold.inverse(` Simen Daehlin `)}
+${titleClr(` Simen Daehlin `)}
 
-${chalk.italic(`Passionate about building state-of-the-art, easy to use, user-friendly websites and applications as I am, it's no surprise that I go out of my way to seek out new technologies and stay up-to-date on industry trends and advancements.
+${italic(`Passionate about building state-of-the-art, easy to use, user-friendly websites and applications as I am, it's no surprise that I go out of my way to seek out new technologies and stay up-to-date on industry trends and advancements.
 Currently working as a backend developer at virgin media with Strapi as the choice of backend framework.`)}
 
-🙋 ${chalk.hex('#da1884').inverse(` Website `)} ${chalk.dim(`https://dehlin.dev`)}
-😎 ${chalk.hex('#6937FF').inverse(` Blog `)}  ${chalk.dim(`https://blog.dehlin.dev`)}
-🌏 ${chalk.hex('#0077b5').inverse.bold(` LinkedIn `)}  ${chalk.dim(`https://www.linkedin.com/in/simendaehlin/`)}
-📖 ${chalk.hex('#6cc644').bold.inverse(` Website `)}  ${chalk.dim(`https://github.com/Eventyret`)}
+🙋 ${website(` Website `)} ${dim(`https://dehlin.dev`)}
+😎 ${blog(` Blog `)}  ${dim(`https://blog.dehlin.dev`)}
+🌏 ${linkedIn(` LinkedIn `)}  ${dim(`https://www.linkedin.com/in/simendaehlin/`)}
+📖 ${github(` Github `)}  ${dim(`https://github.com/Eventyret`)}
 `);
