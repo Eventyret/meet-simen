@@ -1,32 +1,20 @@
 #!/usr/bin/env node
 const init = require('./utils/init');
 const data = require('./utils/data');
-const meow = require('meow');
 const alert = require('cli-alerts');
+const cli = require('./utils/cli');
+const debug = require('./utils/debug');
 
-const helpText = `RUN: npx meet-simen`;
-const options = {
-  flags: {
-    social: {
-      type: 'boolean',
-      default: true,
-    },
-    ad: {
-      type: 'boolean',
-      default: true,
-    },
-  },
-};
-
-const cli = meow(helpText, options);
-
+const input = cli.input;
+const flags = cli.flags;
 (async () => {
   init();
+
   console.log(data.title);
   console.log(data.bio);
-  if (cli.flags.social) console.log(data.social);
-  if (cli.flags.ad) alert({ type: 'info', msg: data.ad });
-  console.log(cli.flags);
-  console.log(cli.input);
-  console.log();
+  if (flags.social) console.log(data.social);
+  if (flags.ad) alert({ type: 'info', msg: data.ad });
+
+  // debug info if needed
+  debug(flags.debug, input, flags);
 })();
