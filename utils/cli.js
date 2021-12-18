@@ -9,7 +9,8 @@ const helpText = `
     --no-social   Don't show the social info
     --ad      Show special ad
     --no-ad   Don't show the special ad
-    --debug   Show debug information
+    -d, --debug   Show debug information
+    
     
   Examples
   npx meet-simen --no-social
@@ -27,9 +28,10 @@ const options = {
       type: 'boolean',
       default: true,
     },
-    ad: {
+    debug: {
       type: 'boolean',
       default: false,
+      alias: 'd',
     },
   },
 };
