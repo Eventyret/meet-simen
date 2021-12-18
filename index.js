@@ -12,7 +12,7 @@ const init = require('./utils/init');
 
 const dim = chalk.dim;
 
-(() => {
+(async () => {
   init();
 
   console.log(`
