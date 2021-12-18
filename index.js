@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-const pkgJson = require('./package.json');
-const welcome = require('cli-welcome');
+
 const chalk = require('chalk');
 const website = chalk.hex('#da1884').inverse;
 const blog = chalk.hex('#6937FF').inverse;
@@ -8,20 +7,13 @@ const linkedIn = chalk.hex('#0077b5').inverse.bold;
 const github = chalk.hex('#6cc644').bold.inverse;
 const titleClr = chalk.hex('#FADC00').bold.inverse;
 const italic = chalk.italic;
-const checkNode = require('cli-check-node');
-const dim = chalk.dim;
-welcome({
-  title: pkgJson.name,
-  tagLine: `Howdy, nice to meet ya!`,
-  description: pkgJson.description,
-  version: pkgJson.version,
-  bgColor: '#FADC00',
-  color: '#000000',
-  bold: true,
-  clear: true,
-});
 
-checkNode('12');
+const init = require('./utils/init');
+
+const dim = chalk.dim;
+
+init();
+
 console.log(`
 ${titleClr(` Simen Daehlin `)}
 
