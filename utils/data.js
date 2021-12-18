@@ -4,6 +4,7 @@ const blog = chalk.hex('#6937FF').inverse;
 const linkedIn = chalk.hex('#0077b5').inverse.bold;
 const github = chalk.hex('#6cc644').bold.inverse;
 const titleClr = chalk.hex('#FADC00').bold.inverse;
+const email = chalk.hex('#ff5722').bold.inverse;
 const dim = chalk.dim;
 const italic = chalk.italic;
 
@@ -17,11 +18,15 @@ const social = `
 😎 ${blog(` Blog `)}  ${dim(`https://blog.dehlin.dev`)}
 🌏 ${linkedIn(` LinkedIn `)}  ${dim(`https://www.linkedin.com/in/simendaehlin/`)}
 📖 ${github(` Github `)}  ${dim(`https://github.com/Eventyret`)}
+✉️  ${email(` Email `)}  ${dim(`simen@dehlin.dev`)}
 
 `;
+
+const ad = `Looking for a mentor 👨 get in touch today 👉 simen@dehlin.dev ✉️ `;
 
 module.exports = {
   title,
   bio,
   social,
+  ad,
 };
