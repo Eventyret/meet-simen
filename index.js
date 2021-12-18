@@ -12,9 +12,10 @@ const init = require('./utils/init');
 
 const dim = chalk.dim;
 
-init();
+(() => {
+  init();
 
-console.log(`
+  console.log(`
 ${titleClr(` Simen Daehlin `)}
 
 ${italic(`Passionate about building state-of-the-art, easy to use, user-friendly websites and applications as I am, it's no surprise that I go out of my way to seek out new technologies and stay up-to-date on industry trends and advancements.
@@ -25,3 +26,4 @@ Currently working as a backend developer at virgin media with Strapi as the choi
 🌏 ${linkedIn(` LinkedIn `)}  ${dim(`https://www.linkedin.com/in/simendaehlin/`)}
 📖 ${github(` Github `)}  ${dim(`https://github.com/Eventyret`)}
 `);
+})();
