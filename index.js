@@ -9,6 +9,7 @@ const input = cli.input;
 const flags = cli.flags;
 (async () => {
   init();
+  input.includes('help') && cli.showHelp(0);
 
   console.log(data.title);
   console.log(data.bio);
