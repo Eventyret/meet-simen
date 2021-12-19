@@ -18,7 +18,7 @@ const flags = cli.flags;
   flags.ad && alert({ type: 'info', msg: data.ad });
 
   // Stats.
-  stats();
+  await stats();
 
   // debug info if needed
   debug(flags.debug, cli);
