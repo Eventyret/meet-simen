@@ -28,6 +28,11 @@ const options = {
   inferType: true,
   hardRejection: false,
   flags: {
+    bio: {
+      type: 'boolean',
+      default: true,
+      desc: `Prints the bio`,
+    },
     clear: {
       type: 'boolean',
       default: true,
