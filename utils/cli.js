@@ -2,13 +2,17 @@ const meow = require('meow');
 
 const helpText = `
   Usage
-    npx meet-simen [options]
+    npx meet-simen [options] <commands>
     
   Options
-    --no-social   Don't show the social info
-    --no-ad   Don't show the special ad
-    --help   Show help info.
-    -d, --debug   Show debug information
+    --no-social   Don't print the social info
+    --no-ad   Don't print the special ad
+    -d, --debug   Print debug information
+    -v, --version   Print the version number
+    
+  Commands
+    help    PRint CLI help information
+  
     
     
   Examples
