@@ -13,7 +13,8 @@
     "cli-handle-unhandled": "^1.1.1",
     "cli-welcome": "^2.2.2",
     "log-symbols": "^5.1.0",
-    "meow": "^9.0.0"
+    "meow": "^9.0.0",
+    "node-fetch": "^3.1.0"
   },
   "keywords": [
     "Simen",
