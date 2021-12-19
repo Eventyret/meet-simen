@@ -12,7 +12,7 @@ const helpText = `
     ${yellow(`-v`)}, ${yellow(`--version`)}   Print the version number
     
   Commands
-    ${cyan(`help`)}    Print CLI help information
+    ${cyan(`help`)}            Print CLI help information
   
     
     
