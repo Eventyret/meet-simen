@@ -24,6 +24,8 @@ const helpText = `
 
 `;
 const options = {
+  inferType: true,
+  hardRejection: false,
   flags: {
     social: {
       type: 'boolean',
