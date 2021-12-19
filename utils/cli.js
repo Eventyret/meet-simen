@@ -1,25 +1,26 @@
 const meow = require('meow');
+const { green, yellow, cyan } = require('chalk');
 
 const helpText = `
   Usage
-    npx meet-simen [options] <commands>
+    ${green(`npx meet-simen`)} ${yellow(`[--options]`)} ${cyan(`<command>`)}
     
   Options
-    --no-social   Don't print the social info
-    --no-ad   Don't print the special ad
-    -d, --debug   Print debug information
-    -v, --version   Print the version number
+    ${yellow(`--no-social`)}     Don't print the social info
+    ${yellow(`--no-ad`)}         Don't print the special ad
+    ${yellow(`-d`)}, ${yellow(`--debug`)}     Print debug information
+    ${yellow(`-v`)}, ${yellow(`--version`)}   Print the version number
     
   Commands
-    help    PRint CLI help information
+    ${cyan(`help`)}    Print CLI help information
   
     
     
   Examples
-  npx meet-simen --no-social
-  npx meet-simen --no-ad
-  npx meet-simen --debug
-  npx meet-simen help
+  ${green(`npx meet-simen`)} ${yellow(`--no-social`)}
+  ${green(`npx meet-simen`)} -${yellow(`-no-ad`)}
+  ${green(`npx meet-simen`)} ${yellow(`--debug`)}
+  ${green(`npx meet-simen`)} ${cyan(`help`)}
 
 `;
 const options = {
