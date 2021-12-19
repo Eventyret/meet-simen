@@ -8,6 +8,7 @@ const helpText = `
   Options
     ${yellow(`--no-social`)}     Don't print the social info
     ${yellow(`--no-ad`)}         Don't print the special ad
+    ${yellow(`--no-clear`)}         Don't clear the console
     ${yellow(`-d`)}, ${yellow(`--debug`)}     Print debug information
     ${yellow(`-v`)}, ${yellow(`--version`)}   Print the version number
     
@@ -27,6 +28,10 @@ const options = {
   inferType: true,
   hardRejection: false,
   flags: {
+    clear: {
+      type: 'boolean',
+      default: true,
+    },
     social: {
       type: 'boolean',
       default: true,

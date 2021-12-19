@@ -4,7 +4,7 @@ const unhandled = require('cli-handle-unhandled');
 
 const pkgJson = require('./../package.json');
 
-module.exports = () => {
+module.exports = (clear) => {
   unhandled();
 
   welcome({
@@ -15,7 +15,7 @@ module.exports = () => {
     bgColor: '#FADC00',
     color: '#000000',
     bold: true,
-    clear: true,
+    clear,
   });
 
   checkNode('10');

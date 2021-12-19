@@ -8,7 +8,7 @@ const debug = require('./utils/debug');
 const input = cli.input;
 const flags = cli.flags;
 (async () => {
-  init();
+  init(flags.clear);
   input.includes('help') && cli.showHelp(0);
 
   console.log(data.title);
