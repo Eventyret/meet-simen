@@ -9,7 +9,7 @@ const helpText = `
     ${yellow(`--no-social`)}     Don't print the social info
     ${yellow(`--no-ad`)}         Don't print the special ad
     ${yellow(`--no-clear`)}         Don't clear the console
-    ${yellow(`-d`)}, ${yellow(`--debug`)}     Print debug information
+    ${yellow(`-d`)}, ${yellow(`--debug`)}     Print debug info
     ${yellow(`-v`)}, ${yellow(`--version`)}   Print the version number
     
   Commands
