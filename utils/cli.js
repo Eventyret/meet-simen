@@ -15,7 +15,7 @@ const flags = {
   social: {
     type: 'boolean',
     default: true,
-    desc: `Prints the social media links`,
+    desc: `Prints the social info`,
   },
   ad: {
     type: 'boolean',
