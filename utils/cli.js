@@ -53,6 +53,7 @@ const helpText = meowHelper({
   name: 'npx meet-simen',
   flags,
   commands,
+  desc: `This is a CLI that you can use to get more information about Simen Daehlin. In this CLI, you will find a couple of social links, the bio and probably the latest ad I have.`,
 });
 
 module.exports = meow(helpText, options);
